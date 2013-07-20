@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NamePartsSchema"
+    targetNamespace="http://tempuri.org/NamePartsSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/NamePartsSchema.xsd"
+    xmlns:mstns="http://tempuri.org/NamePartsSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:complexType name ="namepart">
+    <xs:sequence>
+      <xs:element name ="part" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name ="nameparts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name ="startpart" type ="namepart"/>
+        <xs:element name ="endpart" type ="namepart"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

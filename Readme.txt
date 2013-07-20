@@ -1,0 +1,1 @@
+Random name generator creates random operation names for secret missions, from a provided list in an xml file. Created to learn how to read XML using Linq and for later use in a planned project.
